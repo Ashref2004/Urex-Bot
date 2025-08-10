@@ -116,7 +116,7 @@ Urex/
 ![Dashboard](dashboard.png)
 
 ### 📞 اتصل بنا
-![Call Us](call_us.png)
+![Call Us](call.png)
 
 ### 🎛 الأزرار والقوائم
 ![Buttons](btn's.png)
