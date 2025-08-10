@@ -1,116 +1,116 @@
-# 🤖 Urex Bot – النادي العلمي تيسمسيلت
+# 🤖 Urex Bot – Tissemsilt Science Club
 
-## 📌 نظرة عامة
-**Urex Bot** هو بوت تيليجرام مخصص لإدارة أنشطة النادي العلمي Urex بجامعة تيسمسيلت.  
-يتيح للأعضاء والزوار تصفح الأحداث القادمة، الاطلاع على الإعلانات المهمة، إرسال ملاحظات، والتفاعل مع الإدارة.  
-يدعم البوت **نظام صلاحيات** للمشرفين والإداريين مع لوحة تحكم متقدمة.
-
----
-
-## ✨ المميزات
-- 🔐 **تسجيل دخول آمن** باستخدام اسم المستخدم وكلمة المرور.
-- 📅 **إدارة الأحداث**:
-  - عرض الأحداث القادمة، الجارية، المنتهية، والملغاة.
-  - التسجيل أو إلغاء التسجيل في الأحداث.
-  - إضافة، تعديل، أو حذف الأحداث (للمشرفين فقط).
-- 📢 **إدارة الإعلانات**:
-  - إضافة، حذف، وتثبيت الإعلانات.
-  - تحديد الأولوية (عالي – متوسط – منخفض).
-- 👥 **إدارة الأعضاء**:
-  - عرض قائمة الأعضاء وأدوارهم.
-  - تغيير الصلاحيات (للإداريين).
-- 📊 **الإحصائيات**:
-  - إحصائيات حول الأعضاء والأحداث والإعلانات.
-- ✍️ **نظام الملاحظات**:
-  - إرسال اقتراحات أو تعليقات مباشرة إلى إدارة النادي.
-- 📌 **دعم الصلاحيات**:
-  - **Admin** – تحكم كامل.
-  - **Moderator** – تحكم بالأحداث والإعلانات.
-  - **Member** – تصفح والمشاركة.
-  - **Guest** – وصول محدود.
+## 📌 Overview
+**Urex Bot** is a Telegram bot designed to manage the activities of the Urex Science Club at Tissemsilt University.  
+It allows members and guests to browse upcoming events, view important announcements, submit feedback, and interact with the administration.  
+The bot supports a **role-based access system** with an advanced admin panel.
 
 ---
 
-## 🛠️ التقنيات المستخدمة
+## ✨ Features
+- 🔐 **Secure Login** using username and password.
+- 📅 **Event Management**:
+  - View upcoming, ongoing, completed, and canceled events.
+  - Register or unregister for events.
+  - Add, edit, or delete events (for moderators/admins only).
+- 📢 **Announcement Management**:
+  - Add, delete, and pin announcements.
+  - Set priority (high – medium – low).
+- 👥 **User Management**:
+  - View member list and their roles.
+  - Change permissions (admins only).
+- 📊 **Statistics**:
+  - Insights on members, events, and announcements.
+- ✍️ **Feedback System**:
+  - Submit suggestions or comments directly to the club administration.
+- 📌 **Role Support**:
+  - **Admin** – Full control.
+  - **Moderator** – Control events and announcements.
+  - **Member** – Browse and participate.
+  - **Guest** – Limited access.
+
+---
+
+## 🛠️ Tech Stack
 - **Python 3**
 - [python-telegram-bot](https://python-telegram-bot.org/)
-- **PicklePersistence** – لتخزين بيانات الجلسات بشكل دائم.
-- **Logging** – لتتبع النشاط والأخطاء.
-- **Enums & Dataclasses** – لإدارة الحالة والصلاحيات.
+- **PicklePersistence** – Persistent session data storage.
+- **Logging** – Activity and error tracking.
+- **Enums & Dataclasses** – For state and role management.
 
 ---
 
-## 📦 التثبيت
+## 📦 Installation
 
-### 1️⃣ استنساخ المستودع
+### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/username/urex-bot.git
 cd urex-bot
 ```
 
-### 2️⃣ إنشاء بيئة افتراضية وتثبيت الحزم
+### 2️⃣ Create a virtual environment & install dependencies
 ```bash
 python3 -m venv venv
-source venv/bin/activate  # على Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3️⃣ إعداد التوكن
-- أنشئ بوت على تيليجرام عبر [BotFather](https://t.me/BotFather).
-- انسخ الـ **TOKEN** وضعه في ملف `Urex.py` داخل:
+### 3️⃣ Configure the bot token
+- Create a bot via [BotFather](https://t.me/BotFather) on Telegram.
+- Copy your **TOKEN** and place it inside `Urex.py`:
 ```python
 updater = Updater("YOUR_BOT_TOKEN", persistence=persistence, use_context=True)
 ```
 
 ---
 
-## 🚀 التشغيل
+## 🚀 Usage
 ```bash
 python Urex.py
 ```
-بعد التشغيل، افتح تيليجرام وأرسل:
+Once running, open Telegram and send:
 ```
 /start
 ```
 
 ---
 
-## 📂 هيكلة المشروع
+## 📂 Project Structure
 ```
 Urex/
 │
-├── Urex.py               # الكود الرئيسي للبوت
-├── requirements.txt      # الحزم المطلوبة
-└── README.md              # هذا الملف
+├── Urex.py               # Main bot code
+├── requirements.txt      # Dependencies
+└── README.md              # This file
 ```
 
 ---
 
-## 💡 كيفية الاستخدام
-1. تسجيل الدخول باسم المستخدم وكلمة المرور.
-2. استخدام القائمة الرئيسية لتصفح:
-   - الأحداث
-   - الإعلانات
-   - معلومات النادي
-   - التواصل مع الإدارة
-3. للأعضاء ذوي الصلاحيات:
-   - الدخول للوحة التحكم وإدارة المحتوى.
+## 💡 How to Use
+1. Log in with your username and password.
+2. Use the main menu to browse:
+   - Events
+   - Announcements
+   - Club info
+   - Contact the administration
+3. For members with privileges:
+   - Access the admin panel to manage content.
 
 ---
 
-## 🐞 معالجة الأخطاء
-- تنبيهات واضحة للمستخدم عند حدوث خطأ.
-- تسجيل جميع الأخطاء في ملف `urex_bot.log`.
+## 🐞 Error Handling
+- Clear user alerts when errors occur.
+- Logs all errors in `urex_bot.log`.
 
 ---
 
-## 🤝 المساهمة
-- قم بعمل **Fork** للمشروع.
-- أنشئ فرع جديد: `git checkout -b feature-name`.
-- أضف التعديلات.
-- أرسل **Pull Request**.
+## 🤝 Contributing
+- Fork the project.
+- Create a new branch: `git checkout -b feature-name`.
+- Make your changes.
+- Submit a **Pull Request**.
 
 ---
 
-## 📜 الرخصة
-هذا المشروع مفتوح المصدر تحت رخصة MIT – يمكن تعديله واستخدامه بحرية.
+## 📜 License
+This project is open-source under the MIT License – free to use and modify.
