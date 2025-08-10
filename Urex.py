@@ -2651,7 +2651,7 @@ def main() -> None:
 
     persistence = PicklePersistence(filepath='urex_bot_data.pickle')
     
-    updater = Updater("7758395938:AAGNqYGuDZEwZkqF325xE5vLoEDy2RwfwMI", persistence=persistence, use_context=True)
+    updater = Updater("التوكن هنا تحصل عليه من BOTFATHER في الTELEGRAM منقدرش نحط تاعي ديزولي", persistence=persistence, use_context=True)
     dp = updater.dispatcher
 
     
@@ -2843,5 +2843,6 @@ def main() -> None:
 
 
 if __name__ == '__main__':
+
 
     main()
