@@ -1,0 +1,6 @@
+python-telegram-bot==20.3
+python-dotenv==1.0.1
+emoji==2.14.0
+pytz==2024.1
+python-dateutil==2.9.0.post0
+PyYAML==6.0.2
